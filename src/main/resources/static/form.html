@@ -1,0 +1,29 @@
+
+
+<form name="recipeform" class="form-horizontal">
+<div class="form-group">
+    <label class="control-label col-sm-2" > Recipe Name: </label><input type="text" name = "name" ng-model="firstname"  required> </input>
+	   
+	</div>
+<div class="form-group">	
+ <label class="control-label col-sm-2" > Ingredient 1: </label> <input type="text" ng-model="Ingredient1" ng-required="mustBeFilled()">  </input>
+ </div>
+<div class="form-group">	
+ <label class="control-label col-sm-2" > Ingredient 2:</label>  <input type="text" ng-model="Ingredient2" ng-required="mustBeFilled()">  </input>
+  </div>
+<div class="form-group">	
+ <label class="control-label col-sm-2" >Ingredient 3: </label> <input type="text" ng-model="Ingredient3" ng-required="mustBeFilled()">  </input>
+ </div>
+<div class="form-group">	
+ <label class="control-label col-sm-2" >Ingredient 4:</label>  <input type="text" ng-model="Ingredient4" ng-required="mustBeFilled()">  </input>
+ </div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-12">
+      <button type="submit" class="btn btn-default col-sm-2" ng-disabled="recipeform.$invalid" ng-click="submitfunc()">Submit</button>
+   
+      <button type="Cancel" class="btn btn-default col-sm-2" >Cancel</button>
+    </div>
+	{{message}}
+	</div>
+</form>
+
